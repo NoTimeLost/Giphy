@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D814096329853DDD00C1244C /* AnimationConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814096229853DDD00C1244C /* AnimationConstant.swift */; };
 		D8140965298542C600C1244C /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8140964298542C600C1244C /* NetworkServiceImpl.swift */; };
+		D84E8908298584EE00A0582D /* MosaicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E8907298584EE00A0582D /* MosaicCollectionView.swift */; };
+		D84E890C2985898200A0582D /* UICollectionViewLayout+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E890B2985898200A0582D /* UICollectionViewLayout+Ext.swift */; };
 		D8D2B2BC2982A937005748B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2B2BB2982A937005748B4 /* AppDelegate.swift */; };
 		D8D2B2BE2982A937005748B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2B2BD2982A937005748B4 /* SceneDelegate.swift */; };
 		D8D2B2C02982A937005748B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D2B2BF2982A937005748B4 /* FeedViewController.swift */; };
@@ -72,6 +74,8 @@
 /* Begin PBXFileReference section */
 		D814096229853DDD00C1244C /* AnimationConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConstant.swift; sourceTree = "<group>"; };
 		D8140964298542C600C1244C /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
+		D84E8907298584EE00A0582D /* MosaicCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCollectionView.swift; sourceTree = "<group>"; };
+		D84E890B2985898200A0582D /* UICollectionViewLayout+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewLayout+Ext.swift"; sourceTree = "<group>"; };
 		D8D2B2B82982A937005748B4 /* Giphy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D2B2BB2982A937005748B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8D2B2BD2982A937005748B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D84E88FD298580E400A0582D /* MosaicCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D84E8907298584EE00A0582D /* MosaicCollectionView.swift */,
+			);
+			path = MosaicCollectionView;
+			sourceTree = "<group>";
+		};
 		D8D2B2AF2982A937005748B4 = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +338,7 @@
 		D8D2B2FF2983C100005748B4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D84E88FD298580E400A0582D /* MosaicCollectionView */,
 				D8D2B32E29851B72005748B4 /* HorizontalCollectionView */,
 				D8D2B32D29851A73005748B4 /* GridCollectionView */,
 			);
@@ -374,6 +387,7 @@
 				D8D2B3172983D2AF005748B4 /* CGColor+Ext.swift */,
 				D8D2B32529840FE6005748B4 /* UICollectionView+Ext.swift */,
 				D8D2B32729840FF4005748B4 /* UICollectionViewCell+Ext.swift */,
+				D84E890B2985898200A0582D /* UICollectionViewLayout+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -517,8 +531,10 @@
 				D8D2B3202983DF86005748B4 /* FeedScreenAssembly.swift in Sources */,
 				D8140965298542C600C1244C /* NetworkServiceImpl.swift in Sources */,
 				D8D2B33D29853AAE005748B4 /* LayoutConstant.swift in Sources */,
+				D84E890C2985898200A0582D /* UICollectionViewLayout+Ext.swift in Sources */,
 				D8D2B3042983C138005748B4 /* GridCollectionViewFlowLayoutDelegate.swift in Sources */,
 				D8D2B3162983D12E005748B4 /* CALayer+Ext.swift in Sources */,
+				D84E8908298584EE00A0582D /* MosaicCollectionView.swift in Sources */,
 				D8D2B2C02982A937005748B4 /* FeedViewController.swift in Sources */,
 				D8D2B30E2983CCCA005748B4 /* GifCell+Model.swift in Sources */,
 				D8D2B2D42982AF52005748B4 /* KeyStorage.swift in Sources */,

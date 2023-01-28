@@ -30,10 +30,9 @@ final class FeedViewController: UIViewController {
         return collectionView
     }()
 
-    private lazy var gifCollectionView: GridCollectionView = {
-        let collectionView = GridCollectionView()
+    private lazy var gifCollectionView: MosaicCollectionView = {
+        let collectionView = MosaicCollectionView()
         collectionView.backgroundColor = .black
-        collectionView.gridLayoutDelegate = self
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(GifCell.self)
@@ -163,17 +162,5 @@ extension FeedViewController: UICollectionViewDataSource {
         default:
             return UICollectionViewCell()
         }
-    }
-    
-}
-
-// MARK: - GifCollectionViewFlowLayoutDelegate
-
-extension FeedViewController: GridCollectionViewFlowLayoutDelegate {
-
-    func collectionView(_ collectionView: UICollectionView, heightForCellAtIndexPath indexPath: IndexPath) -> CGFloat {
-        let downSample = presenter.gifList[indexPath.row].images.fixedWidthDownsampled
-
-        return gifCollectionView.getHeight(contentWidth: downSample.width, contentHeight: downSample.height)
     }
 }
